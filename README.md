@@ -132,6 +132,7 @@ Rendre le script exécutable :
 Exécutez la commande suivante pour rendre le script exécutable :
 
 chmod +x gestion_equipements.sh
+
 Exécution du script :
 
 Lancez le script en utilisant la commande suivante :
