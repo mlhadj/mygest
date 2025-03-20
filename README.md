@@ -2,9 +2,12 @@ Projet Gestion des Équipements et Tests des IP Actives
 Présentation du Projet
 Le projet "Gestion des Équipements et Tests des IP Actives" permet de gérer les équipements informatiques d'une organisation via une interface en ligne de commande (CLI). Il permet à l'utilisateur de :
 
+Voir les equipements présents
 Ajouter, supprimer des équipements et des types d'équipements dans une base de données MySQL.
 Tester la disponibilité des adresses IP associées aux équipements, en affichant si une IP est active ou non.
+tester des ip, des ports tcp.
 Afficher les résultats avec des messages colorés et des effets visuels (grâce à figlet et lolcat) pour rendre l'expérience utilisateur plus amusante et interactive.
+Génerer un fichier txt de la base de données
 Le projet s'appuie sur une base de données MySQL avec deux tables principales : Equipement et TypeE.
 
 Code Source
