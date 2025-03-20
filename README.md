@@ -14,8 +14,6 @@ Code Source
 1. Test des IP Actives
 Ce script récupère toutes les adresses IP des équipements stockées dans une base de données MySQL et teste leur disponibilité via un ping. Les résultats sont affichés en couleur, avec un message personnalisé en utilisant figlet et lolcat.
 
-bash
-Copier
 #!/bin/bash
 
 # Variables de connexion à la base de données
@@ -61,8 +59,7 @@ echo -e "Test terminé !" | figlet | lolcat
 2. Suppression d'Équipements et Types d'Équipements
 Ce script permet à l'utilisateur de supprimer des équipements ou des types d'équipements de la base de données, en vérifiant au préalable si l'élément à supprimer existe.
 
-bash
-Copier
+
 #!/bin/bash
 
 echo -e "GestParc" | figlet | lolcat
@@ -121,8 +118,6 @@ MySQL ou MariaDB installé : Le script nécessite une base de données MySQL pou
 figlet et lolcat installés : Ces outils sont utilisés pour personnaliser les messages dans le terminal.
 Pour installer figlet et lolcat sur Ubuntu/Debian, vous pouvez utiliser la commande suivante :
 
-bash
-Copier
 sudo apt-get install figlet lolcat
 Étapes d'Utilisation
 Configurer la base de données :
@@ -135,14 +130,12 @@ Créez un fichier script, par exemple gestion_equipements.sh, et copiez-y le cod
 Rendre le script exécutable :
 
 Exécutez la commande suivante pour rendre le script exécutable :
-bash
-Copier
+
 chmod +x gestion_equipements.sh
 Exécution du script :
 
 Lancez le script en utilisant la commande suivante :
-bash
-Copier
+
 ./gestion_equipements.sh
 Fonctionnalités du menu :
 Test des IP Actives : Ce script teste la disponibilité des IP associées aux équipements et les affiche avec des couleurs (vert pour actif, rouge pour inactif).
