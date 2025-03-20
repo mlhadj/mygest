@@ -14,6 +14,8 @@ Code Source
 1. Test des IP Actives
 Ce script récupère toutes les adresses IP des équipements stockées dans une base de données MySQL et teste leur disponibilité via un ping. Les résultats sont affichés en couleur, avec un message personnalisé en utilisant figlet et lolcat.
 
+bash
+Copier
 #!/bin/bash
 
 # Variables de connexion à la base de données
@@ -56,10 +58,11 @@ done
 
 # Message de fin avec figlet et lolcat
 echo -e "Test terminé !" | figlet | lolcat
-
 2. Suppression d'Équipements et Types d'Équipements
 Ce script permet à l'utilisateur de supprimer des équipements ou des types d'équipements de la base de données, en vérifiant au préalable si l'élément à supprimer existe.
 
+bash
+Copier
 #!/bin/bash
 
 echo -e "GestParc" | figlet | lolcat
@@ -111,7 +114,6 @@ esac
 echo -e "Retour au menu" | figlet | lolcat
 echo -e "Appuyez sur entrée pour continuer :"
 read
-
 Utilisation du Projet
 Prérequis
 Système Linux ou Unix (Ubuntu, Debian, etc.)
@@ -119,8 +121,9 @@ MySQL ou MariaDB installé : Le script nécessite une base de données MySQL pou
 figlet et lolcat installés : Ces outils sont utilisés pour personnaliser les messages dans le terminal.
 Pour installer figlet et lolcat sur Ubuntu/Debian, vous pouvez utiliser la commande suivante :
 
+bash
+Copier
 sudo apt-get install figlet lolcat
-
 Étapes d'Utilisation
 Configurer la base de données :
 
@@ -132,22 +135,20 @@ Créez un fichier script, par exemple gestion_equipements.sh, et copiez-y le cod
 Rendre le script exécutable :
 
 Exécutez la commande suivante pour rendre le script exécutable :
-
+bash
+Copier
 chmod +x gestion_equipements.sh
-
 Exécution du script :
 
 Lancez le script en utilisant la commande suivante :
-
+bash
+Copier
 ./gestion_equipements.sh
-
 Fonctionnalités du menu :
 Test des IP Actives : Ce script teste la disponibilité des IP associées aux équipements et les affiche avec des couleurs (vert pour actif, rouge pour inactif).
 Suppression d'un équipement ou d'un type d'équipement : Le menu permet de supprimer des équipements ou des types d'équipements de la base de données en entrant l'ID correspondant.
 Retour au menu : Après chaque opération, le script vous permet de revenir au menu principal pour choisir une nouvelle action.
 Conclusion
 Ce projet est une manière simple de gérer les équipements et tester la disponibilité de leurs adresses IP tout en apportant une touche ludique avec figlet et lolcat. C'est un bon exemple de gestion d'équipements dans un environnement réseau avec une base de données MySQL.
-
-
 
 
